@@ -1,0 +1,88 @@
+body {
+    background: #607d8b;
+}
+
+#canvas-wrapper {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    display: inline-block;
+    border-radius: 10px;
+    background: white;
+    
+    border: 5px solid darkgrey;
+}
+
+#canvas-static {
+    position: absolute;
+    border-radius: 10px;
+}
+
+#canvas-refreshing {
+    position: absolute;
+    border-radius: 10px;
+}
+
+#radius-input {
+}
+
+#spiro-control {
+    width: 200px;
+    display: inline-block;
+
+    vertical-align: top; /* not sure why necessary */
+}
+
+#center-lat-long {
+    width: 12em;
+}
+
+
+
+
+#start-animation {
+}
+
+#stator-radius {
+    display: block;
+}
+
+.rotor .rotor-radius, 
+#stator-radius, 
+#pen-radius, 
+#sample-points,
+#start-segment,
+#end-segment,
+#scale-radius,
+#altitude
+{
+    width: 4em;
+    display: block;
+}
+
+.rotor {
+    display: flex;
+    flex-direction: row;
+}
+.rotor button {
+    margin-left: 5px;
+}
+
+.delete-rotor {
+    color: darkred;
+}
+
+#rotors-div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+}
+
+#output-container {
+    margin-top: 20px;
+}
+
+
