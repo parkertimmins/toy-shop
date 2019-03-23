@@ -1,0 +1,30 @@
+<!DOCTYPE html> <html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+          
+    </head>
+    <body>
+        <div id="canvas-wrapper">
+            <canvas id="canvas-refreshing" height="800" width="800"></canvas>
+        </div>
+
+        <div id="controls">
+            <div>
+                <label>Block size</label>
+                <input id="num-squares" type="range" value="20" min="2" max="100"/>
+            </div>
+
+            <div>
+                <label style="display: inline-block">Speed</label>
+                <input id="animation-speed" type="range" value="2500" min="100" max="5000"/>
+            </div>
+       
+            <div> 
+                <label>Color</label>
+                <input type="color" id="color-input" value="#8c338e">
+            </div>
+        </div>
+        <script src="design.js"></script>
+    </body>
+</html>
