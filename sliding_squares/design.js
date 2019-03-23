@@ -1,29 +1,4 @@
 
-function add_stars() {
-    // skip some frames
-    if (Math.random() > 0.2) {
-        return;
-    }
-
-    let star_count = 5;
-    const canvas = document.getElementById("canvas-refreshing");
-    var ctx = canvas.getContext("2d");
-    while (star_count-- > 0) {
-        const right = Math.random() * canvas.width;
-        const down = Math.random() * canvas.height;
-        const size = Math.random() > 0.5 ? 2 : 1;
-        ctx.beginPath(); //Start path
-        ctx.fillStyle = randBoolean() ? "snow" : "#2ae4fc";
-        ctx.arc(right, down, size, 0, Math.PI * 2, true); // Draw a point using the arc function of the canvas with a point structure.
-        ctx.fill();
-        ctx.closePath();
-    }
-}
-
-function randBoolean() {
-    return Math.random() > 0.5;
-}    
-
 function clear_canvas() {
     const canvas = document.getElementById("canvas-refreshing");
     const context = canvas.getContext('2d');
@@ -49,7 +24,6 @@ function step(timestamp) {
     }
     
     clear_canvas();
-    add_stars();
     
     const num_squares = parseInt(document.getElementById("num-squares").value);
     const timeAnimateOneSide = parseFloat(document.getElementById("animation-speed").value); 
